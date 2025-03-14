@@ -1,0 +1,594 @@
+:root {
+  --main: #A2ECA2;
+  --secondary: #6439FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  cursor: crosshair;
+}
+
+a:hover,
+button:hover,
+label:hover,
+[role="button"]:hover {
+  cursor: pointer;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--secondary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Anton', sans-serif;
+}
+
+.experience-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.hero-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  left: -20px;
+  border: 2px solid white;
+  border-top-right-radius: 400px;
+  border-bottom-right-radius: 400px;
+  transition: 0.2s ease-in-out;
+}
+
+.hero-image:hover {
+  width: 51%;
+  border: 2px solid var(--main);
+}
+
+.hero-links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  text-align: right;
+  gap: 15px;
+  right: -10px;
+}
+
+.hero-link {
+  font-size: 0.8em;
+  font-family: 'Geist Mono', monospace;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 25px 40px;
+  width: 100%;
+  transition: color 0.3s ease, background 0.3s ease;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  text-align: center;
+}
+
+.hero-link:hover {
+  background: var(--main);
+  color: var(--secondary);
+  border: 1px solid var(--main);
+}
+
+.hero-link.active {
+  background: var(--main);
+  color: var(--secondary);
+  font-weight: bold;
+  border: 1px solid var(--main);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 150px auto;
+  padding: 0 50px;
+}
+
+.hero-text {
+  min-width: 300px;
+  text-align: left;
+}
+
+.hero-text h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+  max-width: 400px;
+  color: white;
+}
+
+.hero-text span {
+  color: var(--main);
+}
+
+.hero-text p {
+  font-size: 0.8em;
+  line-height: 1.6;
+  color: white;
+  max-width: 350px;
+}
+
+.hero-content-img {
+  max-width: 150px;
+  height: auto;
+}
+
+.gaming-group {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.studio-title.gaming {
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  left: -20vw;
+  line-height: 1.2;
+}
+
+.studio-title.gaming span {
+  font-family: 'Anton', sans-serif;
+  color: var(--secondary);
+  text-shadow: -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+@keyframes oneSecondActiveGaming {
+  0% {
+    color: var(--main);
+    text-shadow: none;
+  }
+  25%,
+  100% {
+    color: var(--secondary);
+    text-shadow: -1px -1px 0 white,
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white;
+  }
+}
+
+.gspan1 {
+  animation: oneSecondActiveGaming 4s steps(1, end) infinite;
+  animation-delay: 0s;
+}
+
+.gspan2 {
+  animation: oneSecondActiveGaming 4s steps(1, end) infinite;
+  animation-delay: 1s;
+}
+
+.gspan3 {
+  animation: oneSecondActiveGaming 4s steps(1, end) infinite;
+  animation-delay: 2s;
+}
+
+.gspan4 {
+  animation: oneSecondActiveGaming 4s steps(1, end) infinite;
+  animation-delay: 3s;
+}
+
+.studio-description.gaming-desc {
+  width: 100%;
+  max-width: 63vw;
+  font-size: 0.8em;
+  text-align: right;
+  margin-top: 10px;
+  padding-left: 30%;
+}
+
+.studio-description.gaming-desc p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  color: white;
+  margin-right: 10px;
+}
+
+.questions-section {
+  max-width: 60%;
+  margin: 100px auto;
+  color: white;
+  cursor: pointer;
+}
+
+.questions-title {
+  font-size: 2em;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.question {
+  border-bottom: 1px solid white;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-title {
+  font-size: 0.9em;
+  font-family: 'Geist Mono', monospace;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.arrow-icon {
+  width: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.question:hover .question-title {
+  color: var(--main);
+}
+
+.question:hover .arrow-icon {
+  filter: brightness(0) invert(61%) sepia(35%) saturate(550%) hue-rotate(85deg);
+}
+
+.question-answer {
+  font-size: 0.8em;
+  font-family: 'Inter', sans-serif;
+  margin-top: 20px;
+  display: none;
+  color: white;
+}
+
+.question-answer a {
+  color: var(--main);
+}
+
+.studio-title.lab {
+  font-size: 3vw;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  right: 0;
+}
+
+.studio-title.lab span {
+  font-family: 'Anton', sans-serif;
+  color: var(--secondary);
+  text-shadow: -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+@keyframes oneSecondActiveLab {
+  0% {
+    color: var(--main);
+    text-shadow: none;
+  }
+  25%,
+  100% {
+    color: var(--secondary);
+    text-shadow: -1px -1px 0 white,
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white;
+  }
+}
+
+.lspan1 {
+  animation: oneSecondActiveLab 4s steps(1, end) infinite;
+  animation-delay: 3s;
+}
+
+.lspan2 {
+  animation: oneSecondActiveLab 4s steps(1, end) infinite;
+  animation-delay: 2s;
+}
+
+.lspan3 {
+  animation: oneSecondActiveLab 4s steps(1, end) infinite;
+  animation-delay: 1s;
+}
+
+.lspan4 {
+  animation: oneSecondActiveLab 4s steps(1, end) infinite;
+  animation-delay: 0s;
+}
+
+.studio-description.lab-desc {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  max-width: 50%;
+  font-size: 0.8em;
+  text-align: right;
+  margin-top: 10px;
+  margin-left: auto;
+  padding: 0 9vw 0 0;
+}
+
+.studio-description.lab-desc p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  color: white;
+  margin-right: 10px;
+}
+
+.video-section-wrapper {
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.video-container video {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+}
+
+.video-description {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  font-size: 0.8em;
+  color: var(--secondary);
+  border-radius: 5px;
+}
+
+.arrow-icon-overlap {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  transform: translateX(-50%);
+  width: 2.4vw;
+  height: auto;
+  z-index: 2;
+}
+
+.parallax-img {
+  width: 150%;
+  height: 200px;
+  background-image: url('../img/toronto.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 900px) {
+  .experience-hero {
+    gap: 0;
+  }
+  .hero-image {
+    width: 60%;
+    height: 45vh;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+  .hero-image:hover {
+    width: 60%;
+    border: 1px solid white;
+  }
+  .hero-links {
+    width: 40%;
+    height: auto;
+  }
+  .hero-link {
+    text-align: center;
+    padding: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .hero-content-img {
+    margin-left: 60px;
+    max-width: 25vw;
+  }
+  .studio-title.gaming {
+    font-size: 4vw;
+    left: -6vw;
+  }
+  .studio-description.gaming-desc {
+    padding-left: 50%;
+    max-width: 90vw;
+  }
+  .parallax-img {
+    background-attachment: scroll;
+    background-position: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-image {
+    width: 90%;
+    height: 40vh;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+  .hero-links {
+    position: fixed;
+    bottom: 20px;
+    right: -10px;
+    width: 40%;
+    z-index: 999;
+    padding: 0;
+  }
+  .hero-link {
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 0.75em;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+  }
+  .hero-content {
+    width: 80%;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding: 20px 0 25px 0;
+  }
+  .logo {
+    height: 20px;
+  }
+  .experience-hero {
+    margin-top: 40px;
+  }
+  .hero-image {
+    width: 90%;
+    height: 40vh;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+  .hero-image:hover {
+    width: 90%;
+  }
+  .hero-links {
+    position: fixed;
+    bottom: 20px;
+    right: -10px;
+    width: 40%;
+    z-index: 999;
+    padding: 0;
+  }
+  .hero-link {
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 0.75em;
+    backdrop-filter: blur(4px);
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+  }
+  .hero-link.active {
+    position: relative;
+    right: 40px;
+    width: 120%;
+  }
+  .hero-content {
+    flex-direction: column;
+    margin: 80px 0 150px 0;
+    padding: 0 100px;
+  }
+  .hero-text {
+    margin-bottom: 20px;
+  }
+  .hero-content-img {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .gaming-group {
+    max-width: 90%;
+  }
+  .studio-title.gaming {
+    font-size: 1.8em;
+    width: 150%;
+    left: -60px;
+    margin-bottom: 20px;
+  }
+  .studio-description.gaming-desc {
+    padding: 0 100px;
+    text-align: left;
+    max-width: 100%;
+  }
+  .studio-title.lab {
+    font-size: 1.8em;
+    width: 100%;
+    right: 20px;
+    margin-bottom: 20px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 20px 25px 50px;
+  }
+  .footer-logo {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 200px;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+  }
+  .footer-links a {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-content {
+    max-width: 500px;
+    margin: 100px auto;
+  }
+  .studio-title.gaming {
+    font-size: 1.5em;
+    width: 200%;
+    left: -95vw;
+  }
+  .studio-title.lab {
+    font-size: 1.5em;
+    width: 120%;
+    right: -25px;
+  }
+  .arrow-icon-overlap {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    transform: translateX(-50%);
+    width: 4vw;
+    height: auto;
+    z-index: 2;
+  }
+}

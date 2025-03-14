@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience | School of Design</title>
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/industryStyles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/sticker-yes.png"
+      sizes="32x32"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="./index.html">
+          <img src="./img/sodlogo.svg" alt="Logo" class="logo" />
+        </a>
+        <div class="nav-links">
+          <a href="./index.html">_home</a>
+          <a class="active" href="#">_theExperience</a>
+          <a href="./programs.html">_programs</a>
+        </div>
+      </div>
+      <div class="right-links">
+        <a href="./contact.html">Contact</a>
+        <a
+          href="https://www.ontariocolleges.ca/en/colleges/george-brown"
+          target="_blank"
+          class="navbtn"
+          >Apply</a
+        >
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="./index.html">HOME</a>
+        <a href="./experience.html">EXPERIENCE</a>
+        <a href="./programs.html">PROGRAMS</a>
+        <a href="./contact.html">CONTACT</a>
+        <a
+          href="https://www.ontariocolleges.ca/en/colleges/george-brown"
+          target="_blank"
+          >APPLY</a
+        >
+      </div>
+    </div>
+    <section class="experience-hero">
+      <img src="./img/industry.jpg" alt="Experience Hero" class="hero-image" />
+      <div class="hero-links">
+        <a href="./experience.html" class="hero-link">Learning Environment</a>
+        <a href="./industry.html" class="hero-link active">The Industry</a>
+        <a href="./alumni.html" class="hero-link">Alumni Stories</a>
+      </div>
+    </section>
+    <section class="hero-content">
+      <div class="hero-text">
+        <h2>Industry Experience at <span>School of Design</span></h2>
+        <p>
+          At George Brown College’s School of Design, students don’t just learn
+          in the classroom, they gain real experience working with clients and
+          industry professionals. Our
+          <b>Digital Media and Gaming Incubator and StudioLab</b> programs help
+          students build skills, connect with employers, and prepare for careers
+          in design.
+          <br />
+          <br />
+          Students dive into real-world experiences through hands-on projects,
+          industry placements, paid research opportunities, networking events,
+          guest lectures, and conferences, gaining the skills and connections
+          that shape their future.
+        </p>
+      </div>
+      <img
+        src="./img/industry_icon.svg"
+        alt="Learning Spaces"
+        class="hero-content-img"
+      />
+    </section>
+    <div class="parallax-img">-</div>
+    <section class="gaming-studio">
+      <div class="studio-title gaming">
+        <span class="gspan1"
+          >Digital Media and<br />
+          Gaming Incubator</span
+        >
+        <span class="gspan2"
+          >Digital Media and<br />
+          Gaming Incubator</span
+        >
+        <span class="gspan3"
+          >Digital Media and<br />
+          Gaming Incubator</span
+        >
+      </div>
+      <div class="studio-description gaming-desc">
+        <p>
+          Launched in 2012, the Digital Media and Gaming Incubator supports
+          start-ups in gaming and digital media. Students have the chance to:
+        </p>
+      </div>
+      <section class="questions-section gaming-questions">
+        <div class="question" onclick="toggleAnswer(this)">
+          <div class="question-header">
+            <span class="question-title"
+              >What is the Digital Media and Gaming Incubator?
+            </span>
+            <img src="./img/arrow.svg" class="arrow-icon" />
+          </div>
+          <p class="question-answer">
+            The Digital Media and Gaming Incubator is a hub that supports
+            Toronto’s digital sector by offering startups affordable space,
+            business services, and access to technology. It provides a
+            collaborative environment where entrepreneurs can work, network, and
+            grow their ideas.
+          </p>
+        </div>
+        <div class="question" onclick="toggleAnswer(this)">
+          <div class="question-header">
+            <span class="question-title">Where is the Incubator located?</span>
+            <img src="./img/arrow.svg" class="arrow-icon" />
+          </div>
+          <p class="question-answer">
+            The Incubator is located at 3 Lower Jarvis (second floor), along
+            Toronto’s waterfront. It shares space with the School of Design’s
+            programs, fostering a creative and innovative atmosphere.
+          </p>
+        </div>
+        <div class="question" onclick="toggleAnswer(this)">
+          <div class="question-header">
+            <span class="question-title"
+              >What makes the Incubator different from a regular coworking
+              space?
+            </span>
+            <img src="./img/arrow.svg" class="arrow-icon" />
+          </div>
+          <p class="question-answer">
+            Beyond just providing office space, the Incubator is designed to
+            encourage both focused work and collaboration. It offers a dynamic
+            environment where startups can engage in formal and informal
+            exchanges, explore new ideas, and build meaningful connections with
+            like-minded professionals.
+          </p>
+        </div>
+        <div class="question" onclick="toggleAnswer(this)">
+          <div class="question-header">
+            <span class="question-title"
+              >How can I apply for office space or a hotdesk?
+            </span>
+            <img src="./img/arrow.svg" class="arrow-icon" />
+          </div>
+          <p class="question-answer">
+            If you’re interested in securing office space or a hotdesk at the
+            Incubator, please reach out to
+            <a href="mailto:incubator@georgebrown.ca"
+              >incubator@georgebrown.ca</a
+            >
+            for more details and availability.
+          </p>
+        </div>
+      </section>
+    </section>
+    <section class="lab-studio">
+      <div class="studio-title lab">
+        <span class="lspan1">StudioLab</span>
+        <span class="lspan2">StudioLab</span>
+        <span class="lspan3">StudioLab</span>
+        <span class="lspan4">StudioLab</span>
+      </div>
+      <div class="studio-description lab-desc">
+        <p>
+          With StudioLab program, students take on roles like graphic designer,
+          project manager, or UX designer while working on projects for
+          non-profits and businesses in the city.
+        </p>
+      </div>
+      <div class="video-section-wrapper">
+        <img
+          src="./img/arrow-down.png"
+          alt="Arrow Icon"
+          class="arrow-icon-overlap"
+        />
+        <div class="video-container">
+          <video controls>
+            <source src="./video/paulrowan.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-description">Video Overview by Paul Rowan</div>
+        </div>
+      </div>
+    </section>
+    <section class="pre-footer-cta">
+      <h2 class="pre-footer-title">
+        Jump Start <br />
+        Your <span>Journey.</span>
+      </h2>
+      <div class="cta-wrapper">
+        <img src="./img/gbclogo.svg" alt="GBC Logo" class="pre-footer-logo" />
+        <a
+          href="https://www.ontariocolleges.ca/en/colleges/george-brown"
+          target="_blank"
+          class="pre-footer-btn"
+          >APPLY TODAY</a
+        >
+      </div>
+    </section>
+    <footer class="footer">
+      <a href="#">
+        <img src="./img/sodlogo.svg" alt="Footer Logo" class="footer-logo" />
+      </a>
+      <div class="footer-links">
+        <a href="./index.html">_home</a>
+        <a href="#" class="active">_theExperience</a>
+        <a href="./programs.html">_programs</a>
+        <a href="./contact.html">_contact</a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
